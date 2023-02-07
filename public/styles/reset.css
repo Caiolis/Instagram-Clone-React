@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, 'sans-serif';
+    transition: all ease-in-out 0.3s;
+}
+body {
+    background-color: #FAFAFA;
+}
+
+ion-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
