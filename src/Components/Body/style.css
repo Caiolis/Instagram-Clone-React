@@ -1,0 +1,12 @@
+.content-container {
+    max-width: 935px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.left-content {
+    max-width: 640px;
+    width: 100%;
+}
+

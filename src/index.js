@@ -1,9 +1,14 @@
-import ReactDOM from "react-dom"
-import Header from "./Components/Header/Header"
+import ReactDOM from "react-dom";
+import Header from "./Components/Header/Header";
+import Body from "./Components/Body/Body";
+
 
 function App() {
     return (
-        <Header />
+        <div>
+            <Header />
+            <Body />    
+        </div>
     )
 }
 

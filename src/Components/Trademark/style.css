@@ -1,0 +1,12 @@
+.right-side-desc,
+.copyright-mark {
+    margin-top: 20px;
+}
+
+.right-side-desc span,
+.copyright-mark span {
+    font-size: 400;
+    font-size: 11px;
+    color: #C7C7C7;
+    cursor: pointer;
+}

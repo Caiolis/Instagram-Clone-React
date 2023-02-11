@@ -1,0 +1,36 @@
+.profile-desc {
+    display: flex;
+    align-items: center;
+}
+
+.profile-infos,
+.profile-infos-right {
+    display: flex;
+}
+
+.follow .profile-infos{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-image {
+    margin-right: 15px;
+}
+
+.profile-image img {
+    width: 56px;
+    cursor: pointer;
+}
+
+.profile-name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #262626;
+    cursor: pointer;
+}
+
+.profile-name .sub-name {
+    font-weight: 300;
+    font-size: 14px;
+    color: #8e8e8e;
+}

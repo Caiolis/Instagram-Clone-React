@@ -1,0 +1,24 @@
+.mobile-wrapper,
+.mobile-bar {
+    display: none;
+}
+
+@media screen and (max-width: 614px) {
+    .mobile-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+        width: 100%;
+    }
+    .mobile-bar {
+        background-color: #FFF;
+        z-index: 999;
+        position: fixed;
+        bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 17px 19px;
+        width: 100%;
+    }
+}

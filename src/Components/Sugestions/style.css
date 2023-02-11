@@ -1,0 +1,39 @@
+.you-may-like-it {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.may-like-it-right span {
+    font-weight: 500;
+    font-size: 12px;
+    color: #8E8E8E
+}
+
+.may-like-it-left a {
+    font-weight: 500;
+    font-size: 12px;
+    color: #262626
+}
+
+.profile-image .card-image {
+    width: 32px;
+}
+
+.profile-infos-left a{
+    font-weight: 500;
+    font-size: 12px;
+    color: #139EF2;
+}
+
+.cards-wrapper {
+    margin-top: 15px;
+}
+
+.profile-gap {
+    margin-top: 13px;
+}
+
+.sub-name.card-follow {
+    font-size: 12px;
+}
