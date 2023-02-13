@@ -65,6 +65,10 @@
     cursor: pointer;
 }
 
-.post-gap {
-    margin-top: 60px;
+.posts .posts-wrapper:nth-child(2) {
+    margin: 60px 0px;
+}
+
+.posts .posts-wrapper:last-child {
+    margin-bottom: 60px;
 }
