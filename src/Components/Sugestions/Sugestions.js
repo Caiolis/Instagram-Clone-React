@@ -36,11 +36,7 @@ function SugestionsTemplate(props) {
       <div class="profile-infos-right">
         {/* <!-- Profile Image --> */}
         <div class="profile-image">
-          <img
-            class="card-image"
-            src={props.img}
-            alt="Profile Pic"
-          />
+          <img class="card-image" src={props.img} alt="Profile Pic" />
         </div>
         {/* <!-- Profile Image End --> */}
 
@@ -86,7 +82,13 @@ export default function Sugestions() {
 
       {/* <!-- Cards Wrapper --> */}
       <div class="cards-wrapper">
-        {Itens.map(item => (<SugestionsTemplate img={item.img} user={item.user} status={item.status}/>))}
+        {Itens.map((item) => (
+          <SugestionsTemplate
+            img={item.img}
+            user={item.user}
+            status={item.status}
+          />
+        ))}
       </div>
       {/* <!-- Cards Wrapper End --> */}
     </div>
