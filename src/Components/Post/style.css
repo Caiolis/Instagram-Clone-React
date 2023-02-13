@@ -72,3 +72,7 @@
 .posts .posts-wrapper:last-child {
     margin-bottom: 60px;
 }
+
+.red {
+    color: red;
+}

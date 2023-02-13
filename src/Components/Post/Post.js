@@ -38,7 +38,8 @@ function MenuPost(props) {
   const [isSaved, setIsSaved] = useState(false);
 
   // Like informations
-  const [icon, setIcon] = useState(<ion-icon name="heart-outline"></ion-icon>);
+  const [icon, setIcon] = useState("heart-outline");
+  const [color, setColor] = useState("default md hydrated");
   const [isLiked, setIsLiked] = useState(false);
   const [likesCount, setLikesCount] = useState(props.likedBy);
 
@@ -46,16 +47,19 @@ function MenuPost(props) {
   // It will like and dislike the post
   function like(clickedImage = false) {
     if (clickedImage) {
-      setIcon(<ion-icon name="heart" color="danger"></ion-icon>);
+      setIcon("heart");
+      setColor("red md hydrated");
       setLikesCount(props.likedBy + 1)
       setIsLiked(true);
     } else {
       if (!isLiked) {
-        setIcon(<ion-icon name="heart" color="danger"></ion-icon>);
+        setIcon("heart");
+        setColor("red md hydrated");
         setLikesCount(props.likedBy + 1)
         setIsLiked(true);
       } else {
-        setIcon(<ion-icon name="heart-outline"></ion-icon>);
+        setIcon("heart-outline");
+        setColor("default md hydrated");
         setLikesCount(props.likedBy)
         setIsLiked(false)
       }
@@ -114,7 +118,7 @@ function MenuPost(props) {
         <div class="icons-post-infos">
           {/* <!-- Left post Infos --> */}
           <div class="left-post-infos">
-            <span onClick={() => like()} data-test="like-post">{icon}</span>
+            <span onClick={() => like()} data-test="like-post"><ion-icon name={icon} class={color}></ion-icon></span>
             <ion-icon name="chatbubble-outline" class="middle"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
