@@ -9,7 +9,7 @@ const Itens = [
     postImage: "./assets/img/gato-telefone 1.png",
     commentImage: "./assets/img/respondeai 2.png",
     commentUser: "respondeai",
-    likedBy: 250.341,
+    likedBy: 809,
   },
   {
     userImg: "./assets/img/barked 2.png",
@@ -17,7 +17,7 @@ const Itens = [
     postImage: "./assets/img/dog 1.png",
     commentImage: "./assets/img/adorableanimals 2.png",
     commentUser: "adorable_animals",
-    likedBy: 80.685,
+    likedBy: 603,
   },
   {
     userImg: "./assets/img/deschamps.jpg",
@@ -25,7 +25,7 @@ const Itens = [
     postImage: "./assets/img/deschamps-post.jpg",
     commentImage: "./assets/img/adorableanimals 2.png",
     commentUser: "adorable_animals",
-    likedBy: 97.152,
+    likedBy: 202,
   },
 ];
 
@@ -47,14 +47,17 @@ function MenuPost(props) {
   function like(clickedImage = false) {
     if (clickedImage) {
       setIcon(<ion-icon name="heart" color="danger"></ion-icon>);
+      setLikesCount(props.likedBy + 1)
       setIsLiked(true);
     } else {
       if (!isLiked) {
         setIcon(<ion-icon name="heart" color="danger"></ion-icon>);
+        setLikesCount(props.likedBy + 1)
         setIsLiked(true);
       } else {
         setIcon(<ion-icon name="heart-outline"></ion-icon>);
-        setIsLiked(false);
+        setLikesCount(props.likedBy)
+        setIsLiked(false)
       }
     }
   }
